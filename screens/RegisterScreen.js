@@ -69,7 +69,7 @@ class RegisterScreen extends Component {
                         console.log(JSON.stringify(e));
                     });
                 this.setState({ message: 'Successfully Registered', loading: false })
-                this.props.navigation.navigate('Main');
+                this.props.navigation.navigate('Food Items');
             })
             .catch(() => {
                 this.setState({ message: 'Registration Failed !', loading: false });
